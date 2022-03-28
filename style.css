@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 600;
+    background-color: #F9F1F0;
+}
+ 
+
+/*     search-bar     */
+
+.search-bar{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar h1{
+font-weight: 900;
+}
+.search-input{
+    width: 100%;
+    height:40px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px 30px ;
+}
+.description{
+    color: #999;
+}
+.description span{
+    font-size: 22px;
+}
+.search{
+    position: relative;
+}
+#search-icon{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    color: #999;
+}
+#x-icon{
+    position: absolute;
+    top: 30%;
+    left: 200px;
+    color: #999;
+    cursor: pointer;
+}
+
+/*       result     */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.each-result{
+    max-width:300px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: -webkit-box-shadow: 3px 3px 11px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 11px -3px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 11px -3px rgba(0,0,0,0.75);
+}
+
+.part-speech{
+    color: rgb(235, 241, 241);
+}
+
+.result-div ul{
+max-height: 200px;
+overflow-y: auto;
+overflow-wrap: break-word;
+}
+.result-div ul::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+
+.each-result li{
+    border-bottom: 1px solid rgb(63, 61, 61);
+    padding: 10px 10px;
+    margin-right: 12px;
+}
+
+.each-result ul{
+    list-style: none;
+}
+.each-result ul :last-child{
+    border-bottom: none;
+}
+.word{
+    display: flex;
+    justify-content: space-between
+}
+
+#close{
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    height: 30px;
+    width: 30px; 
+    color: red;
+    cursor: pointer; 
+}
+#audio{
+    height: 28px;
+    width: 28px; 
+    color: rgb(235, 241, 241);
+    cursor: pointer; 
+}
+
+
